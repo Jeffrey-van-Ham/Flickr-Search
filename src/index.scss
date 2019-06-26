@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arvo, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
+}
+
+h2 {
+  text-align: center;
+  color: #777;
+}
+
+.clearfix {
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}

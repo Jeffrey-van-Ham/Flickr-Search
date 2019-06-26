@@ -1,0 +1,51 @@
+.image-list {
+  .image-container {
+    float: left;
+    padding: 12px;
+    width: 100%;
+    @media (min-width: 376px) {
+      width: 50%;
+    }
+    @media (min-width: 768px) {
+      width: 33.33333%;
+    }
+    @media (min-width: 992px) {
+      width: 25%;
+    }
+    @media (min-width: 1200px) {
+      width: 20%;
+    }
+    .inner {
+      background-color: #fff;
+      position: relative;
+      padding: 10px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+      overflow: hidden;
+      transition: transform .3s ease-in-out;
+      transform: scale(1);
+      &:hover, &:focus {
+        transform: scale(1.05);
+      }
+    }
+    .image {
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+    }
+    .title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 12px;
+      background: #fff;
+      text-transform: lowercase;
+      letter-spacing: 1px;
+      color: #828282;
+    }
+  }
+}
